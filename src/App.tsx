@@ -1,8 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import type { ReactElement } from "react";
 
-function App() {
+const App = (): ReactElement => {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +21,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
