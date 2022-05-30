@@ -16,7 +16,7 @@ import type { ReactElement } from "react";
  * @returns The `AuthProvider` component skeleton.
  */
 export const AuthProvider = (props: ReactChild): ReactElement => {
-  const [user, setUser] = useState<any>({ name: "admin" });
+  const [user, setUser] = useState<any>(null);
   const logIn = (user: any) => {
     setUser(user);
   };

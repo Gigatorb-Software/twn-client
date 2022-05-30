@@ -1,5 +1,8 @@
-import Header from "./Header";
-import type { ReactChild } from "../../shared/types";
+import { SectionProvider } from "../Section";
+import Banner from "./Banner";
+import Content from "../content/Content";
+import Section from "../Section";
+import type { ReactChild } from "../../../shared/types";
 import type { ReactElement } from "react";
 
 /**
@@ -14,7 +17,11 @@ import type { ReactElement } from "react";
 const Layout = (props: ReactChild): ReactElement => {
   return (
     <>
-      <Header />
+      <Banner />
+      <SectionProvider>
+        <Section />
+        <Content />
+      </SectionProvider>
       {props.children}
     </>
   );
