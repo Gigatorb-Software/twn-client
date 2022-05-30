@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import Login from "./Components/Login";
+import { Grid, TextField, Typography } from "@mui/material";
+import { minWidth } from "@mui/system";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid
+      container
+      justify="center"
+      alignItems="center"
+      direction="column"
+      style={{ minHeight: "100vh" }}
+      spacing={5}
+    >
+      <Grid item style={{ border: "0.2px" }}>
+        <Login />
+      </Grid>
+    </Grid>
   );
 }
 

@@ -1,0 +1,15 @@
+.shortcut{
+    width: 150px;
+    height: 40px;
+    position: fixed;
+}
+.add-user{
+    width: 20%;
+    height:7%;
+    background-color: black;
+    color:white;
+}
+.link{
+    padding-left: 60%;
+    color: white;
+}
