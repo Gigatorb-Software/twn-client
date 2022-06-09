@@ -24,6 +24,10 @@ import { fontWeight } from '@mui/system';
 
 
 const gigatorb1 = () => {
+
+  const googlecolor = {color:'#ff3333'}
+  const facebookcolor={color:'#29487d',height: 30,width: 30,}
+  const linkedlncolor={color:'#006192',height: 30,width: 30,}
   
   const person = {
     color:'dark',
@@ -38,8 +42,7 @@ const gigatorb1 = () => {
     color:'#1DC7FF'
 
   }
-  const facebookcolor={color:'#29487d',height: 30,width: 30,}
-  const linkedlncolor={color:'#006192',height: 30,width: 30,}
+ 
   const account={
     color:'#000000',
   }
@@ -76,20 +79,21 @@ const gigatorb1 = () => {
           
           </FormControl>
           <FormControl sx={{ ml:50,mt:5}}>
-           <Input
+           <Input type="password"
             
             startAdornment={
                 <InputAdornment position="start">
                    <LockIcon style={account}/>
                 </InputAdornment>
               }
+            
             placeholder="password"
             variant="standard"
-            sx={{   "&:hover": { color: '#1DC7FF' }}}
+            sx={{"&:hover": { color: '#1DC7FF' }}}
             
             ></Input>
-        </FormControl>
-        <br></br>
+          </FormControl>
+          <br></br>
          
 
         <Typography sx={{ml:50,mt:1}} style={gridsize}>
