@@ -2,13 +2,12 @@ import * as React from 'react';
  import { useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import PersonIcon from '@mui/icons-material/Person';
 import LockIcon from '@mui/icons-material/Lock';
 import EmailIcon from '@mui/icons-material/Email';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
-import { Image } from "react";
+
 import {
   Box,
   Button,
@@ -28,7 +27,7 @@ import { color } from '@mui/system';
            
 
   
-  const Gigatorb = () => {
+  const Signup = () => {
       const cardStyle = { 
         width: '30vw',
         height: '40vw',
@@ -65,9 +64,7 @@ import { color } from '@mui/system';
         Width:'5px',
         disableUnderline: true,
     }
-  const googlecolor = {color:'#ff3333'}
-  const facebookcolor={color:'#29487d',height: 30,width: 30,}
-  const linkedlncolor={color:'#006192',height: 30,width: 30,}
+  
   const account={
     color:'#000000',
   }
@@ -184,4 +181,4 @@ import { color } from '@mui/system';
     )
 }
 
-export default Gigatorb
+export default Signup

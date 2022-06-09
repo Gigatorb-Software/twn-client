@@ -1,11 +1,8 @@
-import React,{useState} from 'react'
+import React from 'react'
 import PersonIcon from '@mui/icons-material/Person';
 import LockIcon from '@mui/icons-material/Lock';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import GoogleIcon from '@mui/icons-material/Google';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Grid from '@mui/material/Grid';
-import  poppins from '@fontsource/poppins/300.css';
 import {
     Box,
     Button,
@@ -23,7 +20,7 @@ import { fontWeight } from '@mui/system';
 
 
 
-const gigatorb1 = () => {
+const Login = () => {
 
   const googlecolor = {color:'#ff3333'}
   const facebookcolor={color:'#29487d',height: 30,width: 30,}
@@ -134,7 +131,7 @@ const gigatorb1 = () => {
         
             </Box>
             <Typography sx={{ml:52,mt:1}} style={gridsize}>
-        <Link href="#" sx={{
+            <Link href="#" sx={{
               color:'#000000',
               "&:hover": { color: '#1DC7FF' }
             }}>
@@ -149,4 +146,4 @@ const gigatorb1 = () => {
   )
 }
 
-export default gigatorb1
+export default Login;
