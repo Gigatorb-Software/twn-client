@@ -1,34 +1,28 @@
-import React from 'react'
+import React from "react";
+
 import {
     Box,
     Button,
-    Container,
     FormControl,
-    IconButton,
     Input,
     InputAdornment,
-    InputLabel,
-    TextField,
-    Link,
-    FormControlLabel ,Checkbox, Typography,
   } from "@mui/material"; 
-  import KeyIcon from '@mui/icons-material/Key';
-  import PasswordIcon from '@mui/icons-material/Password';
-const Resetpassword = () => {
-       
-    const account={
-        color:'#000000',
-      }
-      const person = {
-        color:'dark',
-        backgroundColor:'#2fc2eb',
-        borderRadius: 8,
-        height: 40,
-        width:210,
-      }
-  return (
+import KeyIcon from "@mui/icons-material/Key";
+import PasswordIcon from "@mui/icons-material/Password";
 
-         <div className='container'>
+const ResetPwd = () => {
+  const account={
+    color:"#000000",
+  }
+  const person = {
+    color:"dark",
+    backgroundColor:"#2fc2eb",
+    borderRadius: 8,
+    height: 40,
+    width:210,
+  }
+  return (
+    <div className="container">
       <Box
         component="img"
         sx={{
@@ -53,7 +47,7 @@ const Resetpassword = () => {
               }
             placeholder="Current Password"
             variant="outlined"
-            sx={{   "&:hover": { color: '#1DC7FF' }}}
+            sx={{   "&:hover": { color: "#1DC7FF" }}}
            ></Input>
           
           </FormControl>
@@ -68,7 +62,7 @@ const Resetpassword = () => {
              
             placeholder="New Password"
             variant="outlined"
-            sx={{   "&:hover": { color: '#1DC7FF' }}}
+            sx={{   "&:hover": { color: "#1DC7FF" }}}
            ></Input>
           
           </FormControl>
@@ -83,17 +77,13 @@ const Resetpassword = () => {
               }
             placeholder="Confirm password"
             variant="outlined"
-            sx={{   "&:hover": { color: '#1DC7FF' }}}
+            sx={{   "&:hover": { color: "#1DC7FF" }}}
            ></Input>
           
           </FormControl>
           <Button sx={{ml:50 , mt:7}} type="submit" variant="contained" style={person}>Submit</Button> 
-
-
-
-
     </div>
-  )
-}
+  );
+};
 
-export default Resetpassword
+export default ResetPwd;
