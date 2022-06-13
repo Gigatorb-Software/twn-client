@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar1 from "./Navbar1";
 
 export const Layout = (props) => {
     return (
         <>
-            <Navbar />
+            <Navbar1 />
             {props.children}
         </>
     );
